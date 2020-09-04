@@ -8,8 +8,6 @@ def key_for_min_value(name_hash)
     return nil
   end
   name_hash.collect do |key, value|
-    #need to iterate and find the min value and then store the *key* in the string min
-    #min << value
     if value <= i
       puts "#{key}: #{value}"
       min = key
@@ -22,5 +20,3 @@ def key_for_min_value(name_hash)
   end
   min
 end
-
-#if name_hash[key]
