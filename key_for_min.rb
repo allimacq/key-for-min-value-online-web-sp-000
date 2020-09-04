@@ -9,13 +9,13 @@ def key_for_min_value(name_hash)
     #min << value
     if value <= i
       puts "#{key}: #{value}"
-      #min = key
+      min = key
     else
       i = 10
       puts i
     end
   end
- # min
+  min
 end
 
 #if name_hash[key]
