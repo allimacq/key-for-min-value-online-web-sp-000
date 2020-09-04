@@ -10,12 +10,12 @@ def key_for_min_value(name_hash)
     if value <= i
       puts "#{key}: #{value}"
       min = key
+    elsif name_hash == {}
+        return nil
     else
       i = 10
       if value <= i 
         min = key
-      elsif name_hash == {}
-        return nil
       end
     end
   end
