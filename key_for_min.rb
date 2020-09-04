@@ -4,14 +4,15 @@
 def key_for_min_value(name_hash)
   min = [ ]
   i = 1
+  if name_hash == {}
+    return nil
+  end
   name_hash.collect do |key, value|
     #need to iterate and find the min value and then store the *key* in the string min
     #min << value
     if value <= i
       puts "#{key}: #{value}"
       min = key
-    elsif name_hash == {}
-      return nil
     else
       i = 10
       if value <= i 
